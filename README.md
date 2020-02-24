@@ -1,2 +1,3 @@
-# project0
-First Project for the online course
+# Project 0
+
+Web Programming with Python and JavaScript
