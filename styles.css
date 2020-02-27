@@ -21,6 +21,76 @@ th {
 }
 
 
+/* Footer */
+
+footer {
+	padding: 6em 0 4em 0;
+  border: 0.5px solid black;
+  background-color: black;
+}
+
+	footer > .inner {
+		margin: 0 auto;
+		width: 80em;
+	}
+
+	footer .copyright {
+    color: white;
+		font-size: 0.9em;
+		margin: 0 0 2em 0;
+		padding: 0;
+		text-align: center;
+	}
+
+		footer .copyright .icons {
+			margin: 2em 0 0 0;
+		}
+
+	@media screen and (max-width: 1280px) {
+
+		footer > .inner {
+			width: 65em;
+		}
+
+	}
+
+	@media screen and (max-width: 980px) {
+
+		footer > .inner {
+			width: 90%;
+		}
+
+	}
+
+	@media screen and (max-width: 736px) {
+
+		footer {
+			padding: 3em 0 1em 0;
+		}
+
+	}
+
+
+ul.icons {
+			cursor: default;
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.icons li {
+				display: inline-block;
+				padding: 0 1em 0 0;
+			}
+
+				ul.icons li:last-child {
+					padding-right: 0;
+				}
+
+				ul.icons li .icon:before {
+					font-size: 2em;
+				}
+
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
@@ -88,54 +158,4 @@ th {
   border: 2px solid black;
   width: 21%auto;
   height: 10%auto;
-}
-
-/* Style all font awesome icons */
-.fa {
-  padding: 1%;
-  font-size: 0.5%;
-  width: 1%;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 50%;
-}
-
-/* Add a hover effect if you want */
-.fa:hover {
- opacity: 0.7;
-}
-
-/* Set a specific color for each brand */
-
-/* Facebook */
-.fa-facebook {
- background: #3B5998;
- color: white;
-}
-
-/* Instagram */
-.fa-instagram {
-  background: #125688;
-  color: white;
-
-
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
 }
