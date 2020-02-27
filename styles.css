@@ -45,8 +45,8 @@ body {
 
 .header h1 {
   position: relative;
-  top: 18px;
-  left: 10px;
+  top: 1%auto;
+  left: 1%auto;
 }
 
 
@@ -61,7 +61,14 @@ body {
 #pastM {
   background-color: #3a9c9c;
   border: 2px solid black;
-  width: 18%;
+  width: 21%;
+  height: 10%;
+}
+
+#comM {
+  background-color: #3a9c9c;
+  border: 2px solid black;
+  width: 21%;
   height: 10%;
 }
 
@@ -92,4 +99,25 @@ body {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
