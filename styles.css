@@ -79,15 +79,15 @@ th {
 #pastM {
   background-color: #3a9c9c;
   border: 2px solid black;
-  width: 21%;
-  height: 10%;
+  width: 21%auto;
+  height: 10%auto;
 }
 
 #comM {
   background-color: #3a9c9c;
   border: 2px solid black;
-  width: 21%;
-  height: 10%;
+  width: 21%auto;
+  height: 10%auto;
 }
 
 /* Style all font awesome icons */
