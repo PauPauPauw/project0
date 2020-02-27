@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Kaleidoskop</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_gallery.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
 
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
   </head>
   <body>
@@ -21,49 +20,79 @@
       <a href="contact.html">Contact</a>
     </div>
 
-    <h3>
-      1. Germania [8.11.2019]
-    </h3>
-
-    <div class="gallery">
-      <a target="_blank" href="img/gallery/germania.jpg">
-        <img src="img/gallery/germania.jpg" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Movie poster</div>
+    <div id="quad">
+      <figure>
+      <img src="img/gallery/germania.jpg" alt="Germania Movie-Poster">
+      <figcaption>Germania Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/montana_sacra.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Montana Sacra Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/samsara.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Samsara - Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/mindgame.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Mind Games - Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/man_from_earth.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>The Man From Earth - Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/shoplifters.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Shoplifter - Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/mustang.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Mustang - Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/24wochen.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>24 Wochen Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/stadt_der_blinden.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Die Stadt der Blinden - Filmplakat</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/germania_veranstaltung.jpg" alt="Audience at the Screening">
+        <figcaption>Audience at the Screening</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/lion_paddy.jpg" alt="Paddy with the regisseur Lion Bischof">
+        <figcaption>Paddy with the regisseur Lion Bischof</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/sterni1.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Partnership with Sternburg Round 1!</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/sterni2.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Partnership with Sternburg Round 2!</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/shop1.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Entrance</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/kolle_mate.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Partnership with Kolle-Mate</figcaption>
+      </figure>
+      <figure>
+        <img src="img/gallery/montana_sacra_veranstaltung.jpg" alt="Montana Sacra Movie-Poster">
+        <figcaption>Montana Sacra Audience</figcaption>
+      </figure>
     </div>
 
-    <div class="gallery">
-      <a target="_blank" href="img/gallery/germania_veranstaltung.jpg">
-        <img src="img/gallery/germania_veranstaltung.jpg" alt="Forest" width="600" height="400">
-      </a>
-      <div class="desc">View of the lecture hall / Cinema</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/gallery/lion_paddy.jpg">
-        <img src="img/gallery/lion_paddy.jpg" alt="Northern Lights" width="600" height="400">
-      </a>
-      <div class="desc">Paddy with the regisseur Lion Bischof</div>
-    </div>
-
-    <h3>
-      2. Montana Sacra [15.11.2019]
-    </h3>
-
-    <div class="gallery">
-      <a target="_blank" href="img/gallery/montana_sacra.jpg">
-        <img src="img/gallery/montana_sacra.jpg" alt="Mountains" width="600" height="400">
-      </a>
-      <div class="desc">Movie poster</div>
-    </div>
-
-    <div class="gallery">
-      <a target="_blank" href="img/gallery/montana_sacra_veranstaltung.jpg">
-        <img src="img/gallery/montana_sacra_veranstaltung.jpg" alt="Mountains" width="600" height="400">
-      </a>
-      <div class="desc">Audience of the screening</div>
-    </div>
-
+    <script type="text/javascript">
+      var quadimages = document.querySelectorAll("#quad figure");
+      for(i=0; i<quadimages.length; i++) {
+        quadimages[i].addEventListener('click', function(){ this.classList.toggle("expanded"); quad.classList.toggle("full") });
+      }
+    </script>
 
   </body>
 </html>

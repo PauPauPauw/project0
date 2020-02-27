@@ -1,7 +1,25 @@
 
 body {
-  background-color: #90e7f5;
+  background-color: #1c768a;
 }
+
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  background-color: #3a9c9c;
+}
+
 
 /* Add a black background color to the top navigation */
 .topnav {
@@ -99,7 +117,7 @@ body {
 .fa-instagram {
   background: #125688;
   color: white;
-}
+
 
 div.gallery {
   margin: 5px;
