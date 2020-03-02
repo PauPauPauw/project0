@@ -91,7 +91,10 @@ ul.icons li .icon:before {
   border: 0.5px solid white;
   font-size: 10px;
   position: relative;
-  bottom: 0;
+  bottom: 1px;
+  text-align: center;
+  background-color: #232a2c;
+  color: white;
 }
 
 
