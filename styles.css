@@ -74,13 +74,13 @@ ul.icons li .icon:before {
   background: #555; }
 
 @media (min-width: 500px) {
-  h1::before {
+  #start::before {
     content: "Welcome to the Kaleidoskop, the independent Cinema of the University of Leipzig!"
   }
 }
 
 @media (max-width: 500px) {
-  h1::before {
+  #start::before {
     content: "Willkommen beim Kaleidoskop Leipzig!"
   }
 }
