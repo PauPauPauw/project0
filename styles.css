@@ -100,7 +100,7 @@ ul.icons li .icon:before {
 
 @media (max-width: 500px) {
   h1::before {
-    content: "Willkommen beim Kaleidoskop"
+    content: "Willkommen beim Kaleidoskop Leipzig!"
   }
 }
 
