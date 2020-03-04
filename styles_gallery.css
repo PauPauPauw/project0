@@ -51,7 +51,8 @@ div#quad figure:nth-child(1) { transform-origin: top left; }
 div#quad figure:nth-child(2) { transform-origin: top right; }
 div#quad figure:nth-child(3) { transform-origin: bottom left; }
 div#quad figure:nth-child(4) { transform-origin: bottom right; }
-div#quad figure figcaption {
+@media (min-width: 500px) {
+  div#quad figure figcaption {
   margin: 0; opacity: 0;
   background: rgba(0,0,0,0.3);
   color: #fff; padding: .3rem;
@@ -63,3 +64,116 @@ div#quad figure figcaption {
 .expanded { transform: scale(2); z-index: 5;  }
 div#quad figure.expanded figcaption { opacity: 1; }
 div.full figure:not(.expanded) { pointer-events: none; }
+
+@media (max-width: 500px) {
+  div#quad figure figcaption {
+  margin: 0; opacity: 0;
+  background: rgba(0,0,0,0.3);
+  color: #fff; padding: .3rem;
+  font-size: 0.5rem;
+  position: absolute;
+  bottom: 0; width: 100%;
+	transition: 1s 1s opacity;
+}
+.expanded { transform: scale(2); z-index: 5;  }
+div#quad figure.expanded figcaption { opacity: 1; }
+div.full figure:not(.expanded) { pointer-events: none; }
+
+
+
+.header {
+  border: 1.5px solid black;
+  background-color: #197571;
+  border-radius: 0px 0px 15px 15px;
+  font-family: 'aclonicaregular', arial, sans-serif;
+}
+
+.mainpart {
+  border-radius: 15px 15px 0px 0px;
+}
+
+@font-face {
+    font-family: 'aclonicaregular';
+    src: url('fonts/aclonica/aclonica-webfont.woff2') format('woff2'),
+         url('fonts/aclonica/aclonica-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.header img {
+  float: left;
+  width: 5%;
+  height: 5%;
+  background: #555;
+  border-radius: 0px 0px 0px 15px;
+  margin-right: 0.2em;
+ }
+
+
+ /* Footer */
+ footer {
+   padding: 2em 0 1em 0;
+   border: 0.5px solid black;
+   background-color: #232a2c; }
+
+ footer > .inner {
+   margin: 0 auto;
+   width: 80em; }
+
+ footer .copyright {
+   color: white;
+   font-size: 0.9em;
+   margin: 0 0 2em 0;
+   padding: 0;
+   text-align: center; }
+
+ footer .copyright .icons {
+   margin: 2em 0 0 0; }
+
+ @media screen and (max-width: 1280px) {
+   footer > .inner {
+     width: 65em; } }
+ @media screen and (max-width: 980px) {
+   footer > .inner {
+     width: 90%; } }
+ @media screen and (max-width: 736px) {
+   footer {
+     padding: 3em 0 1em 0; } }
+ ul.icons {
+   cursor: default;
+   list-style: none;
+   padding-left: 0; }
+
+ ul.icons li {
+   display: inline-block;
+   padding: 0 1em 0 0; }
+
+ ul.icons li:last-child {
+   padding-right: 0; }
+
+ ul.icons li .icon:before {
+   font-size: 2em; }
+
+
+  /*Position of the copyright links*/
+  #urheber {
+    font-size: 10px;
+    position: relative;
+    bottom: 1px;
+    text-align: center;
+    background-color: #232a2c;
+    color: white;
+  }
+
+
+  /*Position of the copyright links*/
+  #urheber {
+    border: 0.5px solid white;
+    font-size: 10px;
+    position: relative;
+    bottom: 1px;
+    text-align: center;
+    background-color: #232a2c;
+    color: white;
+  }

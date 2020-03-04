@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <title>Kaleidoskop</title>
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+        <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+
+        <!-- Add icon library
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-->
+
+        <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+        <script type="text/javascript">
+          window.cookieconsent_options = {"message":"Diese Webseite verwendet Cookies, um Ihnen ein angenehmeres Surfen zu ermöglichen.","dismiss":"Bitte bestätigen!","learnMore":"Mehr Infos","link":null,"theme":"dark-top"};
+        </script>
+        <script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+        <!-- End Cookie Consent plugin -->
+
+        <!-- Script for Movie-search function! -->
+        <script>
+          function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+              a = li[i].getElementsByTagName("a")[0];
+              txtValue = a.textContent || a.innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+              } else {
+                li[i].style.display = "none";
+              }
+            }
+          }
+          </script>
+
+    </head>
+    <body class="container" id="startBody">
+
+      <div class="filmtext">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="index.html">Start</a>
+              <a class="nav-item nav-link active" href="about.html">Unikino<span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="menu.html">Snacks & Getränke</a>
+              <a class="nav-item nav-link" href="gallery.html">Gallerie</a>
+              <a class="nav-item nav-link" href="news.html">News</a>
+              <a class="nav-item nav-link" href="contact.html">Kontakt</a>
+            </div>
+
+              <!-- Movielist -->
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Filme
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="movies/nachtmahr.html">Der Nachtmahr</a>
+                  <a class="dropdown-item" href="movies/blinde.html">Die Stadt der Blinden</a>
+                  <a class="dropdown-item" href="movies/germania.html">Germania</a>
+                  <a class="dropdown-item" href="movies/wilderpeople.html">Hunt for the Wilderpeople</a>
+                  <a class="dropdown-item" href="movies/mind.html">Mind Game</a>
+                  <a class="dropdown-item" href="movies/montana.html">Montana Sacra</a>
+                  <a class="dropdown-item" href="movies/mustang.html">Mustang</a>
+                  <a class="dropdown-item" href="movies/samsara.html">Samsara</a>
+                  <a class="dropdown-item" href="movies/shoplifters.html">Shoplifters</a>
+                  <a class="dropdown-item" href="movies/fromearth.html">The Man From Earth</a>
+                  <a class="dropdown-item" href="movies/24wochen.html">24 Wochen</a>
+                </div>
+              </div>
+          </div>
+        </nav>
+
+
+        <div class="header">
+          <img src="img/kaleidoskop.jpg" alt="logo">
+          <h1>Kaleidoskop Unikino Leipzig</h1>
+        </div>
+
+        <p>
+          We are a newly founded project at the University of Leipzig. We are a small team of cineastes who decided in spring 2019 that the University of Leipzig
+          urgently needs a university cinema again. And so we started to put our project into practice. So far we can look back on a successful first semester in which we
+          were able to present a wide variety of films from all categories to the audience and we were also able to invite some exciting guests for our screenings.
+        </p>
+
+
+
+        <p>
+          During lecture time, our Screenings are every Friday at 6:30pm in a lecture hall at the main campus. The starting times will be displayed on this page and
+          on our socialmedia site on Facebook and Instagram.
+
+        </p>
+
+        <br>
+
+        <h2>
+          Das Team
+        </h2>
+        <p id="about">
+          Wir sind ein Team aus 8 Studierenden der Universität Leipzig.
+          Wir sind ein bunter Haufen aus allen möglichen Studiengängen,
+          aber uns vereint die geimeinsame Liebe für das Kino und die Sehnsucht nach einem
+          schönen Unikino an der Universität Leipzig. Ein Unikino bereichert unseres Erachtens nach
+          das kulturelle Programm an einer Universität und so machten wir uns daran dieses
+          Projekt in die Tat umzusetzen. Ins Leben gerufen von Paddy, einem Mitglied des alten Unikinos
+          an der Universität Leipzig, trafen wir uns im Dezember 2018 bei Paddy in der WG und
+          schon nahm alles seinen Lauf.
+        </p>
+
+
+          Wir sind: Anne, Verena, Paddy, Amir, Marian, Max, Mike und Timo
+
+      </div>
+
+      <footer >
+        <div class="copyright">
+            <a href="https://www.instagram.com/kaleidoskopkino_leipzig/">
+              <img src="img/instagram.png">
+            </a>
+            <a href="https://www.facebook.com/KaleidoskopKino">
+              <img src="img/facebook.png">
+            </a>
+
+          <p>
+            Kaleidoskop Unikino Leipzig  <br>
+            E-Mail: KaleidoskopKino@posteo.de
+            <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+          </p>
+          <p>
+
+          </p>
+
+        </div>
+      </footer>
+
+      <div id="urheber">
+        Urheber-Verweise:
+        <li>Instagram und weitere Icons erstellt von <a href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></li>
+        <li>Facebook-Icon erstellt von <a href="https://www.flaticon.com/de/autoren/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></li>
+      </div>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+    </body>
+</html>

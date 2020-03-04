@@ -12,105 +12,187 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
   </head>
 
-  <body>
+  <body class="container" id="startBody">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="filmtext">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="news.html">News</a>
-          <a class="nav-item nav-link active" href="menu.html">Drinks and Snacks</a>
-          <a class="nav-item nav-link" href="gallery.html">Gallery</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
-          <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Start</a>
+            <a class="nav-item nav-link" href="about.html">Unikino</a>
+            <a class="nav-item nav-link active" href="menu.html">Snacks & Getränke<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="gallery.html">Gallerie</a>
+            <a class="nav-item nav-link" href="news.html">News</a>
+            <a class="nav-item nav-link" href="contact.html">Kontakt</a>
           </div>
+
+          <!-- Movielist -->
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Filme
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="movies/nachtmahr.html">Der Nachtmahr</a>
+              <a class="dropdown-item" href="movies/blinde.html">Die Stadt der Blinden</a>
+              <a class="dropdown-item" href="movies/germania.html">Germania</a>
+              <a class="dropdown-item" href="movies/wilderpeople.html">Hunt for the Wilderpeople</a>
+              <a class="dropdown-item" href="movies/mind.html">Mind Game</a>
+              <a class="dropdown-item" href="movies/montana.html">Montana Sacra</a>
+              <a class="dropdown-item" href="movies/mustang.html">Mustang</a>
+              <a class="dropdown-item" href="movies/samsara.html">Samsara</a>
+              <a class="dropdown-item" href="movies/shoplifters.html">Shoplifters</a>
+              <a class="dropdown-item" href="movies/fromearth.html">The Man From Earth</a>
+              <a class="dropdown-item" href="movies/24wochen.html">24 Wochen</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+      <div class="header">
+        <img src="img/kaleidoskop.jpg" alt="logo">
+        <h1>Kaleidoskop Unikino Leipzig</h1>
       </div>
-      <form class="form-inline">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
-    </nav>
 
 
-    <p>
-    Thanks to some partnerships with small local companies in Leipzig and Halle, we are able to
-    offer you a variety of softdrinks, beers and some snacks.
-    </p>
+      <p>
+      Thanks to some partnerships with small local companies in Leipzig and Halle, we are able to
+      offer you a variety of softdrinks, beers and some snacks.
+      </p>
 
-    <h3>Alkoholfreie Getränke</h3>
+      <div style="background-image: url('img/gallery/sterni1.jpg')">
 
-    <table>
-      <tr>
-        <th>Getränk</th>
-        <th>Menge</th>
-      </tr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-      <tr>
-        <td>Quartiermeister Pils 0%</td>
-        <td>0.33 L</td>
-      </tr>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Getränk (alkoholfrei)</th>
+              <th scope="col">Menge</th>
+            </tr>
+          </thead>
 
-      <tr>
-        <td>Kolle Mate</td>
-        <td>0.33 L</td>
-      </tr>
+          <tbody>
+            <tr>
+              <td>Quartiermeister Pils 0%</td>
+              <td>0.33 L</td>
+            </tr>
 
-      <tr>
-        <td>Mieps Zitrone-Minze</td>
-        <td>0.33 L</td>
-      </tr>
-    </table>
+            <tr>
+              <td>Kolle Mate</td>
+              <td>0.33 L</td>
+            </tr>
 
-    <p>
-      <h3>Alkolhaltige Getränke</h3>
-    </p>
+            <tr>
+              <td>Mieps Zitrone-Minze</td>
+              <td>0.33 L</td>
+            </tr>
+          </tbody>
+        </table>
 
-    <table>
-      <tr>
-        <th>Getränk</th>
-        <th>Menge</th>
-      </tr>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-      <tr>
-        <td>Sterni</td>
-        <td>0.50 L</td>
-      </tr>
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">Getränk (alkoholisch)</th>
+              <th scope="col">Menge</th>
+            </tr>
+          </thead>
 
-      <tr>
-        <td>Quartiermeister Pils</td>
-        <td>0.33 L</td>
-      </tr>
+          <tbody>
+            <tr>
+              <td>Sterni</td>
+              <td>0.50 L</td>
+            </tr>
 
-      <tr>
-        <td>Quartiermeister Radler</td>
-        <td>0.33 L</td>
-      </tr>
+            <tr>
+              <td>Quartiermeister Pils</td>
+              <td>0.33 L</td>
+            </tr>
 
-      <tr>
-        <td>Rotwein</td>
-        <td>1 Glas</td>
-      </tr>
-    </table>
+            <tr>
+              <td>Quartiermeister Radler</td>
+              <td>0.33 L</td>
+            </tr>
 
+            <tr>
+              <td>Rotwein</td>
+              <td>1 Glas</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h3>Snacks</h3>
+      <h3>Snacks</h3>
 
-    <table>
-      <tr>
-        <th>Snack</th>
-        <th>Menge</th>
-      </tr>
+      <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Snack</th>
+            <th scope="col">Menge</th>
+          </tr>
+        </thead>
 
-      <tr>
-        <td>Kichererbsen</td>
-        <td>1 Tüte</td>
-      </tr>
-    </table>
+        <tbody>
+          <tr>
+            <td>Kichererbsen</td>
+            <td>1 Tüte</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <br>
+      
+    </div>
+
+    <footer >
+      <div class="copyright">
+          <a href="https://www.instagram.com/kaleidoskopkino_leipzig/">
+            <img src="img/instagram.png">
+          </a>
+          <a href="https://www.facebook.com/KaleidoskopKino">
+            <img src="img/facebook.png">
+          </a>
+
+        <p>
+          Kaleidoskop Unikino Leipzig  <br>
+          E-Mail: KaleidoskopKino@posteo.de
+          <a class="nav-item nav-link" href="impressum.html">Impressum</a>
+        </p>
+        <p>
+
+        </p>
+
+      </div>
+    </footer>
+
+    <div id="urheber">
+      Urheber-Verweise:
+      <li>Instagram-Icon erstellt von <a href="https://www.flaticon.com/de/autoren/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></li>
+      <li>Facebook-Icon erstellt von <a href="https://www.flaticon.com/de/autoren/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></li>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
